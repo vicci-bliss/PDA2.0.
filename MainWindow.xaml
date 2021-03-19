@@ -1,0 +1,69 @@
+﻿<Window x:Class="PDA2._0_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PDA2._0_"
+        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        mc:Ignorable="d"
+        Title="PDA 2.0" Height="894" Width="1200"
+        Background="Black" ResizeMode="CanMinimize" WindowState="Maximized" Icon="/icon.png" WindowStyle="None"
+        >
+    <Window.Resources>
+        <Cursor x:Key="Cursor">
+            e:\projects\s.t.a.l.k.e.r\pda 2.0\wpfapp1\resources\cursor.cur
+        </Cursor>
+    </Window.Resources>
+
+    <Grid Cursor="{StaticResource Cursor}">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/bg.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86*"></RowDefinition>
+            <RowDefinition Height="58*"></RowDefinition>
+            <RowDefinition Height="239*"></RowDefinition>
+            <RowDefinition Height="128*"></RowDefinition>
+            <RowDefinition Height="250*"></RowDefinition>
+            <RowDefinition Height="54*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"></ColumnDefinition>
+            <ColumnDefinition Width="186*"></ColumnDefinition>
+            <ColumnDefinition Width="201*"></ColumnDefinition>
+            <ColumnDefinition Width="109*"></ColumnDefinition>
+            <ColumnDefinition Width="25*"></ColumnDefinition>
+            <ColumnDefinition Width="36*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="WindowName" Grid.Column="1" Grid.Row="1" Content="" FontSize="22" Foreground="White" Margin="116,9,57,1"/>
+        <Button Grid.Column="4" Grid.Row="2" Content="Строка 0 Столбец 0" Click="OffButton_Click" Opacity="0" Margin="27,138,0,10" />
+        <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="Maps" Margin="10,0,0,0" Visibility="Hidden"
+        Address="https://www.google.com/maps" />
+        <!--<cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="Maps" Margin="10,0,0,0" Visibility="Hidden"
+        Address="https://web.telegram.org" />-->
+        <Label x:Name="TimeLabel" Grid.Column="3" Grid.Row="5" FontSize="17" Foreground="White" Content="18:46:34 15.03.2021" Margin="24,4,0,6" />
+        <Canvas Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,6,10,10">
+            <Button x:Name="TasksButton" Canvas.Left="58" Canvas.Top="10" Width="94" Height="18" Opacity="0" Click="TasksButton_Click"/>
+            <Button x:Name="MapsButton" Canvas.Left="166" Canvas.Top="10" Width="94" Height="18" Opacity="0" Click="MapsButton_Click"/>
+            <Button Content="Button" Canvas.Left="270" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
+            <Button Content="Button" Canvas.Left="389" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
+            <Button Content="Button" Canvas.Left="512" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
+            <Button Content="Button" Canvas.Left="630" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
+        </Canvas>
+        <Button Grid.Column="4" Grid.Row="4" Content="" Click="OnButton_Click" Opacity="0" Margin="25,10,2,149" />
+        <Canvas x:Name="OffScreen" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Background="Black"/>
+
+        <!--<ListBox x:Name="tasksList" Grid.Column="1" Grid.Row="2" Margin="30,46,22,29" Grid.RowSpan="3" ItemsSource="{Binding}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" FontSize="16" />
+                        <TextBlock Text="{Binding Date}" FontSize="12" />
+                        <TextBlock Text="{Binding Data}" FontSize="13" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>-->
+    </Grid>
+</Window>
