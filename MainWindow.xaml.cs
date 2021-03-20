@@ -23,32 +23,25 @@ namespace PDA2._0_
         public MainWindow()
         {
             InitializeComponent();
-
             TimeDate();
         }
 
         private void OffButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            OffScreen.Visibility = Visibility.Visible;
             this.WindowState = WindowState.Minimized;
         }
 
-        private void OnButton_Click(object sender, System.Windows.RoutedEventArgs e)
-        {
-            OffScreen.Visibility = Visibility.Hidden;
-        }
 
         private void TasksButton_Click(object sender, RoutedEventArgs e)
         {
-            WindowName.Content = "Задания";
-
-            Maps.Visibility = Visibility.Hidden;
+            PageNameLabel.Content = "Задания";
+            Main.Content = new TasksPage();
         }
 
         private void MapsButton_Click(object sender, RoutedEventArgs e)
         {
-            WindowName.Content = "План";
-            Maps.Visibility = Visibility.Visible;
+            PageNameLabel.Content = "Карта";
+            Main.Content = new MapPage();
         }
 
         private void TimeDate()
@@ -56,13 +49,8 @@ namespace PDA2._0_
             var timer = new System.Windows.Threading.DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.IsEnabled = true;
-            timer.Tick += (o, e) => { TimeLabel.Content = DateTime.Now.ToString("hh:mm:ss dd.MM.yyyy"); };
+            timer.Tick += (o, e) => { DateTimeLabel.Content = DateTime.Now.ToString("hh:mm:ss dd.MM.yyyy"); };
             timer.Start();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

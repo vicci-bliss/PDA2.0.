@@ -102,3 +102,7 @@ E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\PDA2.0.
 E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\PDA2.0..dll
 E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\PDA2.0..pdb
 E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\PDA2.0..genruntimeconfig.cache
+E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\MapPage.g.cs
+E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\MapPage.baml
+E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\TasksPage.g.cs
+E:\Projects\s.t.a.l.k.e.r\PDA 2.0\App\PDA2.0\obj\x64\Debug\netcoreapp3.1\TasksPage.baml

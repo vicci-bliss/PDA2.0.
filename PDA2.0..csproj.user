@@ -7,7 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="MapPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TasksPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MapPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TasksPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -4,14 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PDA2._0_"
-        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
         Title="PDA 2.0" Height="894" Width="1200"
-        Background="Black" ResizeMode="CanMinimize" WindowState="Maximized" Icon="/icon.png" WindowStyle="None"
+        Background="White" ResizeMode="CanMinimize" WindowState="Maximized" Icon="/icon.png" WindowStyle="None"
         >
     <Window.Resources>
         <Cursor x:Key="Cursor">
-            e:\projects\s.t.a.l.k.e.r\pda 2.0\wpfapp1\resources\cursor.cur
+            e:\projects\s.t.a.l.k.e.r\pda 2.0\app\pda2.0\resources\cursor.cur
         </Cursor>
     </Window.Resources>
 
@@ -20,50 +19,25 @@
             <ImageBrush ImageSource="/Resources/bg.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="86*"></RowDefinition>
-            <RowDefinition Height="58*"></RowDefinition>
-            <RowDefinition Height="239*"></RowDefinition>
-            <RowDefinition Height="128*"></RowDefinition>
-            <RowDefinition Height="250*"></RowDefinition>
-            <RowDefinition Height="54*"></RowDefinition>
-            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="140*"></RowDefinition>
+            <RowDefinition Height="240*"></RowDefinition>
+            <RowDefinition Height="142*"></RowDefinition>
+            <RowDefinition Height="225*"></RowDefinition>
+            <RowDefinition Height="147*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="43*"></ColumnDefinition>
-            <ColumnDefinition Width="186*"></ColumnDefinition>
-            <ColumnDefinition Width="201*"></ColumnDefinition>
-            <ColumnDefinition Width="109*"></ColumnDefinition>
-            <ColumnDefinition Width="25*"></ColumnDefinition>
-            <ColumnDefinition Width="36*"></ColumnDefinition>
+            <ColumnDefinition Width="49*"></ColumnDefinition>
+            <ColumnDefinition Width="182*"></ColumnDefinition>
+            <ColumnDefinition Width="306*"></ColumnDefinition>
+            <ColumnDefinition Width="63*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label x:Name="WindowName" Grid.Column="1" Grid.Row="1" Content="" FontSize="22" Foreground="White" Margin="116,9,57,1"/>
-        <Button Grid.Column="4" Grid.Row="2" Content="Строка 0 Столбец 0" Click="OffButton_Click" Opacity="0" Margin="27,138,0,10" />
-        <cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="Maps" Margin="10,0,0,0" Visibility="Hidden"
-        Address="https://www.google.com/maps" />
-        <!--<cefSharp:ChromiumWebBrowser Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="Maps" Margin="10,0,0,0" Visibility="Hidden"
-        Address="https://web.telegram.org" />-->
-        <Label x:Name="TimeLabel" Grid.Column="3" Grid.Row="5" FontSize="17" Foreground="White" Content="18:46:34 15.03.2021" Margin="24,4,0,6" />
-        <Canvas Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,6,10,10">
-            <Button x:Name="TasksButton" Canvas.Left="58" Canvas.Top="10" Width="94" Height="18" Opacity="0" Click="TasksButton_Click"/>
-            <Button x:Name="MapsButton" Canvas.Left="166" Canvas.Top="10" Width="94" Height="18" Opacity="0" Click="MapsButton_Click"/>
-            <Button Content="Button" Canvas.Left="270" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
-            <Button Content="Button" Canvas.Left="389" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
-            <Button Content="Button" Canvas.Left="512" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
-            <Button Content="Button" Canvas.Left="630" Canvas.Top="10" Width="94" Height="18" Opacity="0"/>
-        </Canvas>
-        <Button Grid.Column="4" Grid.Row="4" Content="" Click="OnButton_Click" Opacity="0" Margin="25,10,2,149" />
-        <Canvas x:Name="OffScreen" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Background="Black"/>
-
-        <!--<ListBox x:Name="tasksList" Grid.Column="1" Grid.Row="2" Margin="30,46,22,29" Grid.RowSpan="3" ItemsSource="{Binding}">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Name}" FontSize="16" />
-                        <TextBlock Text="{Binding Date}" FontSize="12" />
-                        <TextBlock Text="{Binding Data}" FontSize="13" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>-->
+        <Label x:Name="PageNameLabel" Content="" Foreground="White" FontWeight="Bold" FontSize="20" Margin="107,90,144,2" Grid.Column="1"/>
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" Width="732" Height="30"
+                    VerticalAlignment="Top" Margin="10,22,0,0" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="4">
+            <Button Content="Tasks" Click="TasksButton_Click" Height="30" Width="129" Opacity="1" />
+            <Button Content="Maps" Click="MapsButton_Click" Height="30" Width="95" Opacity="1" />
+        </StackPanel>
+        <Frame x:Name="Main" Margin="10,10,10,10" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+        <Label x:Name="DateTimeLabel" Content="26.04.1986 01:23:47" Foreground="White" FontSize="18" Grid.Column="2" Margin="441,16,0,80" Grid.Row="4"/>
     </Grid>
 </Window>
