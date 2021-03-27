@@ -3,12 +3,48 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:PDA2._0_"
+      xmlns:local="clr-namespace:PDA2._0_" xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="TasksPage">
 
-    <Grid Background="White">
-        
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"></ColumnDefinition>
+            <ColumnDefinition Width="49*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView Name="tasksList" ItemsSource="{DynamicResource ResourceKey=tasks}" Background="{x:Null}" Foreground="White" FontSize="20" Margin="0,28,0,0" BorderBrush="{x:Null}" SelectionMode="Single" BorderThickness="0,0,0,0">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Transparent" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Id}" Width="30">№</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Width="230">Название</GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <ListView.Resources>
+                <Style TargetType="GridViewColumnHeader">
+                    <Setter Property="Visibility" Value="Collapsed" />
+                </Style>
+                
+                <col:ArrayList x:Key="tasks">
+                    <local:Task Id="1" Name="Первое задание"/>
+                    <local:Task Id="2" Name="Второе задание"/>
+                    <local:Task Id="3" Name="Третье задание"/>
+                </col:ArrayList>
+            </ListView.Resources>
+        </ListView>
+
+        <Frame x:Name="openTask" Grid.Column="1" NavigationUIVisibility="Hidden" Margin="0,28,0,0"/>
+
+
     </Grid>
 </Page>

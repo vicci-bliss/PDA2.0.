@@ -14,14 +14,13 @@ using System.Windows.Shapes;
 namespace PDA2._0_
 {
     /// <summary>
-    /// Логика взаимодействия для TasksPage.xaml
+    /// Логика взаимодействия для OpenTask.xaml
     /// </summary>
-    public partial class TasksPage : Page
+    public partial class OpenTask : Page
     {
-        public TasksPage()
+        public OpenTask()
         {
             InitializeComponent();
-            openTask.Content = new OpenTask();
         }
     }
 }
