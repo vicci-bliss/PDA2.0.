@@ -19,9 +19,9 @@
             <ColumnDefinition Width="400*"></ColumnDefinition>
             <ColumnDefinition Width="400*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Задание первое" HorizontalAlignment="Left" Margin="280,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="240" Height="50" FontSize="25" Foreground="White"/>
-        <Label Content="(27.04.1986 12:00:45)" HorizontalAlignment="Left" Margin="315,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="174" Grid.Row="1" FontSize="16" Foreground="White"/>
-        <ScrollViewer Content="Это было мое первое задание" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="320" Width="619" FontSize="18" Foreground="White"/>
+        <Label Content="Задание первое" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="780" Height="50" FontSize="25" Foreground="White"/>
+        <Label Content="(27.04.1986 12:00:45)" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="190" Grid.Row="1" Foreground="White"/>
+        <ScrollViewer Content="Это было мое первое задание" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Height="320" Width="780" FontSize="18" Foreground="White" Margin="10,0,0,0"/>
         <Button Content="Удалить" Grid.Column="1" HorizontalAlignment="Left" Margin="125,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="66"/>
         <Button Content="Редактировать" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Width="92" Margin="10,0,0,0"/>
 

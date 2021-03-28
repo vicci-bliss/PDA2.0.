@@ -49,6 +49,10 @@
             "CefSharp.Wpf": {
               "target": "Package",
               "version": "[88.2.90, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[5.0.4, )"
             }
           },
           "imports": [

@@ -14,37 +14,10 @@
             <ColumnDefinition Width="49*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ListView Name="tasksList" ItemsSource="{DynamicResource ResourceKey=tasks}" Background="{x:Null}" Foreground="White" FontSize="20" Margin="0,28,0,0" BorderBrush="{x:Null}" SelectionMode="Single" BorderThickness="0,0,0,0">
-            <ListView.ItemContainerStyle>
-                <Style TargetType="{x:Type ListViewItem}">
-                    <Style.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" Value="Transparent" />
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ListView.ItemContainerStyle>
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Id}" Width="30">№</GridViewColumn>
-                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Width="230">Название</GridViewColumn>
-                </GridView>
-            </ListView.View>
-            <ListView.Resources>
-                <Style TargetType="GridViewColumnHeader">
-                    <Setter Property="Visibility" Value="Collapsed" />
-                </Style>
-                
-                <col:ArrayList x:Key="tasks">
-                    <local:Task Id="1" Name="Первое задание"/>
-                    <local:Task Id="2" Name="Второе задание"/>
-                    <local:Task Id="3" Name="Третье задание"/>
-                </col:ArrayList>
-            </ListView.Resources>
-        </ListView>
+        <ListBox Name="tasksList" Background="{x:Null}" Foreground="White" FontSize="20" Margin="0,52,50,0" BorderBrush="{x:Null}" SelectionMode="Single" BorderThickness="0,0,0,0">
+            
+        </ListBox>
 
         <Frame x:Name="openTask" Grid.Column="1" NavigationUIVisibility="Hidden" Margin="0,28,0,0"/>
-
-
     </Grid>
 </Page>

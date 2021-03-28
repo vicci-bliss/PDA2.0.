@@ -1,13 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "GvU80Hj/LWUKCyV+T9AExr3y77PjO+mgAPkNd8Ez4lpwZRUn8g2xlIlys12qrvdUCywnfayAFXByts3/M176Uw==",
+  "dgSpecHash": "/D+r8BHl2RBgfBMsvBae3aaHgR5r0kRDhTRiIn7d0rz65IT4jJg1iP6UAH60SWBA6q4dwwSoJgM3+79BN4/j/w==",
   "success": true,
   "projectFilePath": "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\PDA2.0..csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicci_bliss\\.nuget\\packages\\cef.redist.x64\\88.2.9\\cef.redist.x64.88.2.9.nupkg.sha512",
     "C:\\Users\\vicci_bliss\\.nuget\\packages\\cef.redist.x86\\88.2.9\\cef.redist.x86.88.2.9.nupkg.sha512",
     "C:\\Users\\vicci_bliss\\.nuget\\packages\\cefsharp.common\\88.2.90\\cefsharp.common.88.2.90.nupkg.sha512",
-    "C:\\Users\\vicci_bliss\\.nuget\\packages\\cefsharp.wpf\\88.2.90\\cefsharp.wpf.88.2.90.nupkg.sha512"
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\cefsharp.wpf\\88.2.90\\cefsharp.wpf.88.2.90.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\microsoft.data.sqlite\\5.0.4\\microsoft.data.sqlite.5.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.4\\microsoft.data.sqlite.core.5.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "C:\\Users\\vicci_bliss\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": [
     {
