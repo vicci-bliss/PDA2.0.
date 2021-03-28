@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\PDA2.0..csproj": {}
+    "D:\\Projects\\PDA2.0\\PDA2.0\\PDA2.0..csproj": {}
   },
   "projects": {
-    "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\PDA2.0..csproj": {
+    "D:\\Projects\\PDA2.0\\PDA2.0\\PDA2.0..csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\PDA2.0..csproj",
+        "projectUniqueName": "D:\\Projects\\PDA2.0\\PDA2.0\\PDA2.0..csproj",
         "projectName": "PDA2.0.",
-        "projectPath": "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\PDA2.0..csproj",
-        "packagesPath": "C:\\Users\\vicci_bliss\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\s.t.a.l.k.e.r\\PDA 2.0\\App\\PDA2.0\\obj\\",
+        "projectPath": "D:\\Projects\\PDA2.0\\PDA2.0\\PDA2.0..csproj",
+        "packagesPath": "C:\\Users\\dania\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\PDA2.0\\PDA2.0\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vicci_bliss\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dania\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -73,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

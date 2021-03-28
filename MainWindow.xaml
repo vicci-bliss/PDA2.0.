@@ -10,7 +10,7 @@
         >
     <Window.Resources>
         <Cursor x:Key="Cursor">
-            e:\projects\s.t.a.l.k.e.r\pda 2.0\app\pda2.0\resources\cursor.cur
+            d:\projects\pda2.0\pda2.0\resources\cursor.cur
         </Cursor>
     </Window.Resources>
 
@@ -39,5 +39,7 @@
         </StackPanel>
         <Frame x:Name="Main" Margin="10,10,10,10" NavigationUIVisibility="Hidden" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
         <Label x:Name="DateTimeLabel" Content="26.04.1986 01:23:47" Foreground="White" FontSize="18" Grid.Column="2" Margin="441,16,0,80" Grid.Row="4"/>
+        <Label Grid.Column="1" Margin="95,108,171,77" Grid.Row="1">Ghbdtn</Label>
+        <Label Grid.Column="1" Margin="95,156,171,29" Grid.Row="1" Content="bgfbfbf" x:Name="label"></Label> 
     </Grid>
 </Window>
